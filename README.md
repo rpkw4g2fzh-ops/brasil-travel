@@ -1,2 +1,93 @@
 # brasil-travel
 HTML, CSS, JavaScript를 활용한 여행지 소개 웹 페이지입니다.
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>브라질 여행 소개</title>
+  <style>
+    body {
+      font-family: '맑은 고딕', sans-serif;
+      background: #daf1e4;
+      color: #2f4f4f;
+      margin: 0; padding: 0;
+    }
+    header {
+      background: #a4d4c9;
+      padding: 25px;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      color: #255c4f;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto 60px;
+      padding: 0 20px;
+    }
+    section {
+      background: #f0faf5;
+      border-radius: 25px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 4px 4px 12px #b7d8cd;
+    }
+    h2 {
+      text-align: center;
+      color: #317157;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .places {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+    .place {
+      background: #ffffffcc;
+      flex: 1 1 260px;
+      border-radius: 20px;
+      box-shadow: 0 3px 10px rgba(50,100,70,0.15);
+      cursor: pointer;
+      transition: transform 0.25s ease-in-out;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 15px;
+    }
+    .place:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 16px rgba(50,100,70,0.35);
+    }
+    .place img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .place h3 {
+      margin: 15px 0 6px;
+      font-size: 1.4rem;
+      color: #255c4f;
+    }
+    .place p {
+      margin: 0 10px;
+      font-size: 1rem;
+      color: #4a6657;
+      text-align: center;
+      line-height: 1.3;
+    }
+    .foods {
+      text-align: center;
+    }
+    .food-item {
+      margin-bottom: 25px;
